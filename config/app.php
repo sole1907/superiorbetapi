@@ -162,11 +162,15 @@ return [
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        //TCK\Odbc\OdbcServiceProvider::class,
+        //TobyMaxham\Database\OdbcServiceProvider::class,
     ],
 
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
+
     |--------------------------------------------------------------------------
     |
     | This array of class aliases will be registered when this application

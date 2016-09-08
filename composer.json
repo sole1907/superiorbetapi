@@ -9,7 +9,12 @@
         "laravel/framework": "5.2.*",
 	    "tymon/jwt-auth": "0.5.*",
         "dingo/api": "1.0.*@dev",
-        "barryvdh/laravel-cors": "^0.7.1"
+        "barryvdh/laravel-cors": "^0.7.1",
+        "barryvdh/laravel-ide-helper": "^2.2",
+        "doctrine/dbal": "^2.5",
+        "tck/odbc": "dev-master",
+        "guzzlehttp/guzzle": "~6.0",
+        "tobymaxham/laravel-odbc-driver": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -46,6 +51,8 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
             "php artisan optimize"
         ]
     },
